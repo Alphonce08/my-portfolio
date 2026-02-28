@@ -1,0 +1,13 @@
+{% extends 'myapp/base.html' %}
+{% block content %}
+<h2>Experience</h2>
+{% for exp in experiences %}
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">{{ exp.role }} - {{ exp.company }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ exp.start_date }} to {{ exp.end_date|default:"Present" }}</h6>
+    <p class="card-text">{{ exp.description }}</p>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}

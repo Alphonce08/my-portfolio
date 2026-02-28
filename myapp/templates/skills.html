@@ -1,0 +1,16 @@
+{% extends 'myapp/base.html' %}
+{% block content %}
+<h2>Technical & Soft Skills</h2>
+<ul>
+{% for skill in skills %}
+<li>{{ skill.name }} ({{ skill.category }})</li>
+{% endfor %}
+</ul>
+
+<h2>Hobbies</h2>
+<ul>
+{% for hobby in hobbies %}
+<li>{{ hobby.name }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
