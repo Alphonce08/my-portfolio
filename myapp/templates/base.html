@@ -15,6 +15,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
+      <img src="{% static 'profile.jpeg' %}" alt="Profile Picture" class="rounded-circle" width="40" height="40">
         <a class="navbar-brand" href="/">Alphonce Rotich</a>
         <div>
             <a class="nav-link text-white" href="/">Home</a>
@@ -24,7 +25,22 @@
 </nav>
 
 <div class="container mt-5">
+  <div class="text-center">
+    <h1>Alphonce Kipkorir Rotich</h1>
+    <p class="lead">Full Stack Software Engineer</p>
+    <p>📞 0708477938 | 📧 alphoncerotich30@gmail.com</p>
+</div>
+
+<hr>
+
+<h2>Career Objective</h2>
+<p>
+A passionate Software Engineer with expertise in both Front-End and Back-End development, seeking a dynamic and challenging environment. Committed to leveraging my technical and interpersonal skills to positively impact organizational performance and deliver innovative software solutions.
+</p>
+
+<hr>
     {% block content %}{% endblock %}
+    
 </div>
 
 <footer class="bg-dark text-white text-center p-3 mt-5">
@@ -33,24 +49,3 @@
 
 </body>
 </html>
-
-<style>
-  body {
-    background-color: #f4f6f9;
-}
-
-h1 {
-    font-weight: bold;
-}
-
-.card {
-    border-radius: 10px;
-}
-
-.navbar-brand {
-    font-weight: bold;
-}
-.nav-link {
-    font-size: 1.1em;
-}
-</style>

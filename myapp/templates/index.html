@@ -1,86 +1,157 @@
-{% extends 'base.html' %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alphonce Rotich | Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="text-center">
-    <h1>Alphonce Kipkorir Rotich</h1>
-    <p class="lead">Full Stack Software Engineer</p>
-    <p>📞 0708477938 | 📧 alphoncerotich30@gmail.com</p>
-</div>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<hr>
+    <!-- Custom CSS -->
 
-<h2>Career Objective</h2>
-<p>
-A passionate Software Engineer with expertise in Front-End and Back-End development,
-committed to delivering innovative software solutions.
-</p>
+</head>
+<body>
 
-<hr>
-
-<h2>Education</h2>
-<ul>
-    <li><strong>Emobilis Mobile Technology Institute</strong> (2021 – 2023) – Software Development</li>
-    <li><strong>Infotec College</strong> (2022) – Computer Packages</li>
-    <li><strong>Motiret Secondary School</strong> – Mean Grade C</li>
-</ul>
-
-<hr>
-
-<h2>Professional Experience</h2>
-
-<div class="card mb-3">
-    <div class="card-body">
-        <h5>Python Software Developer – Tech22 Limited</h5>
-        <ul>
-            <li>Developed Python-based software solutions</li>
-            <li>Implemented ERP (Odoo) solutions</li>
-            <li>Led maintenance and system optimization</li>
-        </ul>
+<!-- HERO SECTION -->
+<section class="hero text-center text-white d-flex align-items-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Alphonce Rotich</h1>
+        <h3>Software Engineer</h3>
+        <p class="mt-3">
+            Passionate Full-Stack Developer skilled in Django, React & Cloud Technologies.
+        </p>
+        <div class="mt-4">
+            <a href="mailto:alphoncerotich30@gmail.com" class="btn btn-light me-2">Email Me</a>
+            <a href="#" class="btn btn-outline-light">LinkedIn</a>
+        </div>
     </div>
-</div>
+</section>
 
-<div class="card mb-3">
-    <div class="card-body">
-        <h5>Freelancer (2021 – 2023)</h5>
-        <p>Data annotation & collection services (Remotask)</p>
+<!-- CAREER OBJECTIVE -->
+<section class="container py-5">
+    <h2 class="section-title">Career Objective</h2>
+    <p>
+        A passionate Software Engineer with expertise in both Front-End and Back-End development,
+        seeking a dynamic and challenging environment. Committed to leveraging my technical
+        and interpersonal skills to positively impact organizational performance and
+        deliver innovative software solutions.
+    </p>
+</section>
+
+<!-- CORE COMPETENCIES -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="section-title">Core Competencies</h2>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h5>Backend</h5>
+                <ul>
+                    <li>Django REST</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Frontend</h5>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React JS</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5>DevOps & Cloud</h5>
+                <ul>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>AWS</li>
+                    <li>GCP</li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
-<hr>
+<!-- EXPERIENCE -->
+<section class="container py-5">
+    <h2 class="section-title">Professional Experience</h2>
 
-<h2>Technical Skills</h2>
-
-<div class="row">
-    <div class="col-md-6">
-        <ul>
-            <li>Python</li>
-            <li>HTML/CSS</li>
-            <li>Kotlin</li>
-        </ul>
+    <div class="card mt-4 shadow-sm">
+        <div class="card-body">
+            <h5>Remotask</h5>
+            <small>Oct 2022 - March 2023</small>
+            <ul class="mt-3">
+                <li>Task Execution & Performance</li>
+                <li>Training and Onboarding Responsibilities</li>
+                <li>Legal & Professional Obligations</li>
+            </ul>
+        </div>
     </div>
-    <div class="col-md-6">
-        <ul>
-            <li>Bootstrap</li>
-            <li>Firebase</li>
-            <li>Odoo ERP</li>
-        </ul>
+</section>
+
+<!-- PROJECTS -->
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="section-title">Key Projects</h2>
+
+        <div class="row mt-4">
+
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5>Income & Expense Tracker</h5>
+                        <p>Android application to track income & expenses with data visualization.</p>
+                        <span class="badge bg-primary">Kotlin</span>
+                        <a href="#" class="btn btn-sm btn-dark mt-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5>Fashion Project</h5>
+                        <p>E-commerce platform for clothing, electronics & jewellery.</p>
+                        <span class="badge bg-success">Django</span>
+                        <span class="badge bg-info">PostgreSQL</span>
+                        <span class="badge bg-warning text-dark">Bootstrap</span>
+                        <a href="#" class="btn btn-sm btn-dark mt-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
+</section>
 
-<hr>
 
-<h2>Projects</h2>
 
-{% for project in projects %}
-<div class="card mb-3">
-    <div class="card-body">
-        <h5>{{ project.title }}</h5>
-        <p>{{ project.description }}</p>
-        <small>Tech: {{ project.technologies }}</small>
-    </div>
-</div>
-{% empty %}
-<p>No projects added yet.</p>
-{% endfor %}
+<!-- CONTACT -->
+<section class="bg-dark text-white py-5 text-center">
+    <h2>Contact Me</h2>
+    <p>Email: alphoncerotich30@gmail.com</p>
+    <p>Phone: +254 708 477 938</p>
+    <p>LinkedIn: Connect Professionally</p>
+    <p class="mt-4">© 2026 Kipngeno Kering. All rights reserved.</p>
+</section>
 
-{% endblock %}
+</body>
+</html>
+
+<style>
+    .hero {
+        background-size: cover;
+        height: 100vh;
+    }
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        border-bottom: 3px solid #007bff;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+</style>
