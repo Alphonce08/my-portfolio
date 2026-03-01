@@ -1,12 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Welcome to My App</h1>
-    <p>This is the homepage of my Django application. Here you can find links to various sections such as experience and education.</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="text-center">
+    <h1>Alphonce Kipkorir Rotich</h1>
+    <p class="lead">Full Stack Software Engineer</p>
+    <p>📞 0708477938 | 📧 alphoncerotich30@gmail.com</p>
+</div>
+
+<hr>
+
+<h2>Career Objective</h2>
+<p>
+A passionate Software Engineer with expertise in Front-End and Back-End development,
+committed to delivering innovative software solutions.
+</p>
+
+<hr>
+
+<h2>Education</h2>
+<ul>
+    <li><strong>Emobilis Mobile Technology Institute</strong> (2021 – 2023) – Software Development</li>
+    <li><strong>Infotec College</strong> (2022) – Computer Packages</li>
+    <li><strong>Motiret Secondary School</strong> – Mean Grade C</li>
+</ul>
+
+<hr>
+
+<h2>Professional Experience</h2>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5>Python Software Developer – Tech22 Limited</h5>
+        <ul>
+            <li>Developed Python-based software solutions</li>
+            <li>Implemented ERP (Odoo) solutions</li>
+            <li>Led maintenance and system optimization</li>
+        </ul>
+    </div>
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5>Freelancer (2021 – 2023)</h5>
+        <p>Data annotation & collection services (Remotask)</p>
+    </div>
+</div>
+
+<hr>
+
+<h2>Technical Skills</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <ul>
+            <li>Python</li>
+            <li>HTML/CSS</li>
+            <li>Kotlin</li>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <ul>
+            <li>Bootstrap</li>
+            <li>Firebase</li>
+            <li>Odoo ERP</li>
+        </ul>
+    </div>
+</div>
+
+<hr>
+
+<h2>Projects</h2>
+
+{% for project in projects %}
+<div class="card mb-3">
+    <div class="card-body">
+        <h5>{{ project.title }}</h5>
+        <p>{{ project.description }}</p>
+        <small>Tech: {{ project.technologies }}</small>
+    </div>
+</div>
+{% empty %}
+<p>No projects added yet.</p>
+{% endfor %}
+
+{% endblock %}
