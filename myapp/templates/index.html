@@ -13,20 +13,10 @@
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<section class="hero text-center text-white d-flex align-items-center">
-    <div class="container">
-        <h1 class="display-4 fw-bold">Alphonce Rotich</h1>
-        <h3>Software Engineer</h3>
-        <p class="mt-3">
-            Passionate Full-Stack Developer skilled in Django, React & Cloud Technologies.
-        </p>
-        <div class="mt-4">
-            <a href="mailto:alphoncerotich30@gmail.com" class="btn btn-light me-2">Email Me</a>
-            <a href="#" class="btn btn-outline-light">LinkedIn</a>
-        </div>
-    </div>
-</section>
+<!-- Header -->
+{% include 'header.html' %}
+
+ 
 
 <!-- CAREER OBJECTIVE -->
 <section class="container py-5">
@@ -38,6 +28,9 @@
         deliver innovative software solutions.
     </p>
 </section>
+
+<!-- EDUCATION -->
+ {% include 'education.html' %}
 
 <!-- CORE COMPETENCIES -->
 <section class="bg-light py-5">
@@ -136,7 +129,7 @@
     <p>Email: alphoncerotich30@gmail.com</p>
     <p>Phone: +254 708 477 938</p>
     <p>LinkedIn: Connect Professionally</p>
-    <p class="mt-4">© 2026 Kipngeno Kering. All rights reserved.</p>
+    <p class="mt-4">© 2026 Alphonce Rotich. All rights reserved.</p>
 </section>
 
 </body>
@@ -154,4 +147,5 @@
         display: inline-block;
         margin-bottom: 1rem;
     }
+
 </style>

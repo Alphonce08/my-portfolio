@@ -8,3 +8,10 @@ class Project(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+
+class Experience(models.Model):
+    period = models.CharField(max_length=100)
+    title = models.CharField(max_length=100)
+    company = models.CharField(max_length=100)
