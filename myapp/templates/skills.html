@@ -1,16 +1,91 @@
-{% extends 'base.html' %}
-{% block content %}
-<h2>Technical & Soft Skills</h2>
-<ul>
-{% for skill in skills %}
-<li>{{ skill.name }} ({{ skill.category }})</li>
-{% endfor %}
-</ul>
+{% load static %}
 
-<h2>Hobbies</h2>
-<ul>
-{% for hobby in hobbies %}
-<li>{{ hobby.name }}</li>
-{% endfor %}
-</ul>
-{% endblock %}
+
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+</head>
+<body>
+
+</body>
+</html>
+<section class="container py-5">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-container">
+    <div class="skill-category">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Django REST</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Github</li>
+        <li>Bootstrap</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Effective Communication</li>
+        <li>Team Collaboration</li>
+        <li>Time Management</li>
+        <li>Problem-Solving</li>
+        <li>Adaptability</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Cloud & DevOps</h3>  
+      <ul>
+        <li>Google Cloud Platform (GCP)</li>
+        <li>Docker</li>
+        <li>Kubernetes (Basic)</li>
+      </ul>
+    </div>
+    </div>
+
+    
+</section>
+
+
+<style>
+    .section-title {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #0f0f0f;
+        margin-bottom: 20px;
+    }
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .skill-category {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33% - 40px);
+    min-width: 250px;
+  }
+  .skill-category h3 {
+    font-size: 1.5rem;
+    color: #0c0d0e;
+    margin-bottom: 15px;
+  }
+  .skill-category ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  .skill-category ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+</style>
