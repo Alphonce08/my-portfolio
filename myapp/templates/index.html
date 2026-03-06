@@ -19,14 +19,19 @@
  
 
 <!-- CAREER OBJECTIVE -->
-<section class="container py-5">
+<section class="career-objective">
+
+  <div class="career-container">
     <h2 class="section-title">Career Objective</h2>
-    <p>
-        A passionate Software Engineer with expertise in both Front-End and Back-End development,
-        seeking a dynamic and challenging environment. Committed to leveraging my technical
-        and interpersonal skills to positively impact organizational performance and
-        deliver innovative software solutions.
+
+    <p class="career-text">
+      A passionate Software Engineer with expertise in both Front-End and Back-End development,
+      seeking a dynamic and challenging environment. Committed to leveraging my technical
+      and interpersonal skills to positively impact organizational performance and
+      deliver innovative software solutions.
     </p>
+  </div>
+
 </section>
 
 
@@ -34,44 +39,6 @@
 {% include 'education.html' %}
 
 
-
-
-<!-- CORE COMPETENCIES -->
-<section class="bg-light py-5">
-    <div class="container">
-        <h2 class="section-title">Core Competencies</h2>
-
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <h5>Backend</h5>
-                <ul>
-                    <li>Django REST</li>
-                    <li>Node.js</li>
-                </ul>
-            </div>
-
-            <div class="col-md-4">
-                <h5>Frontend</h5>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React JS</li>
-                </ul>
-            </div>
-
-            <div class="col-md-4">
-                <h5>DevOps & Cloud</h5>
-                <ul>
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>AWS</li>
-                    <li>GCP</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- EXPERIENCE -->
 <section class="container py-5">
@@ -130,13 +97,16 @@
 
 
 <!-- CONTACT -->
-<section class="bg-dark text-white py-5 text-center">
-    <h2>Contact Me</h2>
-    <p>Email: alphoncerotich30@gmail.com</p>
-    <p>Phone: +254 708 477 938</p>
-    <p>LinkedIn: Connect Professionally</p>
-    <p class="mt-4">© 2026 Alphonce Rotich. All rights reserved.</p>
-</section>
+{% include 'contact.html' %}]
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white text-center py-3">
+
+<p>© 2026 Alphonce Rotich. All rights reserved.</p>
+
+</footer>
+
 
 </body>
 </html>
@@ -152,6 +122,72 @@
         display: inline-block;
         margin-bottom: 1rem;
     }
+
+
+
+.career-objective{
+  padding:60px 20px;
+  background:#ffffff;
+}
+
+
+.career-container{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+
+.section-title{
+  font-size:2rem;
+  margin-bottom:25px;
+}
+
+
+.career-text{
+  font-size:1.1rem;
+  line-height:1.7;
+  color:#333;
+}
+
+/* -------- RESPONSIVE DESIGN -------- */
+
+/* Split screen / smaller laptop */
+@media (max-width:1000px){
+
+  .career-container{
+    max-width:700px;
+  }
+
+}
+
+/* Tablets */
+@media (max-width:700px){
+
+  .section-title{
+    font-size:1.6rem;
+  }
+
+  .career-text{
+    font-size:1rem;
+  }
+
+}
+
+/* Small phones */
+@media (max-width:400px){
+
+  .career-objective{
+    padding:40px 15px;
+  }
+
+  .career-text{
+    font-size:0.95rem;
+  }
+
+}
+
+
     
 
 </style>

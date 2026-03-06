@@ -1,91 +1,149 @@
 {% load static %}
-
-
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+
 </head>
+
 <body>
+
+<section class="skills-section">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill-category">
+<h3>Technical Skills</h3>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Django REST</li>
+<li>Node.js</li>
+<li>Python</li>
+<li>GitHub</li>
+<li>Bootstrap</li>
+</ul>
+</div>
+
+<div class="skill-category">
+<h3>Soft Skills</h3>
+<ul>
+<li>Effective Communication</li>
+<li>Team Collaboration</li>
+<li>Time Management</li>
+<li>Problem-Solving</li>
+<li>Adaptability</li>
+</ul>
+</div>
+
+<div class="skill-category">
+<h3>Cloud & DevOps</h3>
+<ul>
+<li>Google Cloud Platform (GCP)</li>
+<li>Docker</li>
+<li>Kubernetes (Basic)</li>
+</ul>
+</div>
+
+</div>
+
+</section>
 
 </body>
 </html>
-<section class="container py-5">
-  <h2 class="section-title">Skills</h2>
-  <div class="skills-container">
-    <div class="skill-category">
-      <h3>Technical Skills</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Django REST</li>
-        <li>Node.js</li>
-        <li>Python</li>
-        <li>Github</li>
-        <li>Bootstrap</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Soft Skills</h3>
-      <ul>
-        <li>Effective Communication</li>
-        <li>Team Collaboration</li>
-        <li>Time Management</li>
-        <li>Problem-Solving</li>
-        <li>Adaptability</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Cloud & DevOps</h3>  
-      <ul>
-        <li>Google Cloud Platform (GCP)</li>
-        <li>Docker</li>
-        <li>Kubernetes (Basic)</li>
-      </ul>
-    </div>
-    </div>
-
-    
-</section>
-
 
 <style>
-    .section-title {
-        margin-top: 40px;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: bold;
-        color: #0f0f0f;
-        margin-bottom: 20px;
-    }
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  .title {
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:40px;
   }
-  .skill-category {
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1 1 calc(33% - 40px);
-    min-width: 250px;
-  }
-  .skill-category h3 {
-    font-size: 1.5rem;
-    color: #0c0d0e;
-    margin-bottom: 15px;
-  }
-  .skill-category ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  .skill-category ul li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-  }
+ 
+
+/* SECTION */
+.skills-section{
+    padding:60px 20px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    font-weight:bold;
+    margin-bottom:40px;
+}
+
+/* GRID CONTAINER */
+.skills-container{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+/* SKILL CARD */
+.skill-category{
+    background:#f5f5f5;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:all 0.3s ease;
+}
+
+/* CARD TITLE */
+.skill-category h3{
+    margin-bottom:15px;
+    color:#1e3c72;
+}
+
+/* LIST */
+.skill-category ul{
+    padding-left:20px;
+}
+
+.skill-category li{
+    margin-bottom:8px;
+    font-size:1rem;
+}
+
+/* HOVER EFFECT */
+.skill-category:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 12px 25px rgba(0,0,0,0.2);
+    background:#ffffff;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Split screen / tablets */
+@media (max-width:900px){
+
+.skills-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Phones */
+@media (max-width:600px){
+
+.skills-container{
+    grid-template-columns:1fr;
+}
+
+.section-title{
+    font-size:1.6rem;
+}
+
+.skill-category{
+    padding:20px;
+}
+
+}
+
 </style>

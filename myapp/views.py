@@ -23,6 +23,9 @@ def project(request):
 def skills(request):
     return render(request, 'skills.html')
 
+def base(request):
+    return render(request, 'base.html')
+
 
 
 
