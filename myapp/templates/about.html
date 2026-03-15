@@ -1,4 +1,4 @@
-<section class="hero">
+{% comment %} <section class="hero">
   <div class="hero-content">
     <h2>Career Objective</h2>
     <p>
@@ -9,4 +9,220 @@
       software solutions.
     </p>
   </div>
-</section>
+</section> {% endcomment %}
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+
+<div class="container py-5">
+
+<!-- PROFILE CARD -->
+<div class="profile-card shadow">
+
+<div class="row align-items-center">
+
+<!-- Profile Image -->
+<div class="col-md-3 text-center">
+
+<img src="{% static 'img/profile.jpeg' %}" class="profile-img">
+
+<div class="badge-role">
+Software Engineer
+</div>
+
+</div>
+
+
+<!-- Profile Details -->
+<div class="col-md-9 text-md-start text-center">
+
+<h1 class="name">Alphonce Rotich</h1>
+
+<p class="job">Software Engineer</p>
+
+<div class="contact">
+
+<span><i class="bi bi-linkedin"></i> LinkedIn</span>
+
+<span><i class="bi bi-envelope-fill"></i> alphoncerotich30@gmail.com</span>
+
+<span><i class="bi bi-telephone-fill"></i> +254 708 477 938</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- CAREER OBJECTIVE -->
+<div class="objective-card shadow">
+
+<h2>Career Objective</h2>
+
+<p>
+A passionate Software Engineer with expertise in both Front-End and Back-End development, seeking a dynamic and challenging environment. Committed to leveraging my technical and interpersonal skills to positively impact organizational performance and deliver innovative software solutions.
+</p>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+<style>
+  body{
+background:#eef1f7;
+font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* PROFILE CARD */
+
+.profile-card{
+
+background: linear-gradient(135deg,#294f8b,#365fa6);
+
+padding:40px;
+
+border-radius:25px;
+
+color:white;
+
+margin-bottom:40px;
+
+}
+
+
+/* PROFILE IMAGE */
+
+.profile-img{
+
+width:140px;
+height:140px;
+
+border-radius:50%;
+
+border:6px solid rgba(255,255,255,0.4);
+
+object-fit:cover;
+
+}
+
+
+/* BADGE */
+
+.badge-role{
+
+margin-top:12px;
+
+background: linear-gradient(135deg,#3c49d8,#242c95);
+
+padding:8px 30px;
+
+display:inline-block;
+
+border-radius:25px;
+
+font-size:14px;
+
+}
+
+
+/* NAME */
+
+.name{
+
+font-size:42px;
+
+font-weight:700;
+
+}
+
+
+.job{
+
+opacity:0.85;
+
+margin-bottom:20px;
+
+}
+
+
+/* CONTACT */
+
+.contact{
+
+display:flex;
+
+gap:35px;
+
+flex-wrap:wrap;
+
+font-size:15px;
+
+}
+
+.contact i{
+
+margin-right:6px;
+
+}
+
+
+/* OBJECTIVE */
+
+.objective-card{
+
+background: linear-gradient(135deg,#647bd3,#7c43a6);
+
+padding:40px;
+
+border-radius:20px;
+
+color:white;
+
+}
+
+.objective-card h2{
+
+font-size:34px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.objective-card p{
+
+line-height:1.8;
+
+font-size:16px;
+
+}
+</style>
