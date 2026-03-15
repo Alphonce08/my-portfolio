@@ -1,9 +1,8 @@
 from django.shortcuts import render
 from .models import Project
 
-def home(request):
-    projects = Project.objects.all()
-    return render(request, 'index.html', {'projects': projects})
+def index(request):
+    return render(request, 'index.html')
 
 def contact(request):
     return render(request, 'contact.html')
