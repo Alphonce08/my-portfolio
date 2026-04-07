@@ -41,14 +41,15 @@
 </section>
 
 <!-- PROJECTS -->
+ <!-- PROJECTS -->
 <section class="bg-light py-5">
     <div class="container">
         <h2 class="section-title">Key Projects</h2>
 
-        <div class="row mt-4">
+        <div class="row mt-4 g-4">
 
-            <div class="col-md-6">
-                <div class="card shadow-sm">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="card shadow-sm h-100">
                     <div class="card-body">
                         <h5>Income & Expense Tracker</h5>
                         <p>Android application to track income & expenses with data visualization.</p>
@@ -58,8 +59,8 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="card shadow-sm">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="card shadow-sm h-100">
                     <div class="card-body">
                         <h5>Fashion Project</h5>
                         <p>E-commerce platform for clothing, electronics & jewellery.</p>
@@ -100,12 +101,14 @@
         background-size: cover;
         height: 100vh;
     }
+
     .section-title {
         font-size: 2rem;
         font-weight: bold;
         display: inline-block;
         margin-bottom: 1rem;
     }
+  
     
 .career-objective{
   padding:60px 20px;
@@ -167,6 +170,52 @@
     font-size:0.95rem;
   }
 
+}
+/* Section title */
+.section-title{
+   background-color:#f5f5f5;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Project card */
+.card{
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Card body spacing */
+.card-body{
+    padding: 25px;
+}
+
+/* Project title */
+.card-body h5{
+    font-weight: 600;
+}
+
+/* Button styling */
+.card .btn{
+    border-radius: 6px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px){
+    .section-title{
+        font-size: 1.6rem;
+    }
+
+    .card-body{
+        padding: 20px;
+    }
 }
 
 

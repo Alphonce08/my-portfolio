@@ -1,1 +1,102 @@
-<h2>Base Template</h2>
+<!-- PROJECTS -->
+ {% load static %}
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Key Projects</h2>
+
+        <div class="row mt-4 g-4">
+
+            <!-- Project 1 -->
+            <div class="col-12 col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Income & Expense Tracker</h5>
+                        <p class="card-text">
+                            Android application to track income & expenses with data visualization.
+                        </p>
+
+                        <span class="badge bg-primary">Kotlin</span>
+
+                        <br>
+                        <a href="project/" class="btn btn-sm btn-dark mt-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-12 col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Fashion Project</h5>
+                        <p class="card-text">
+                            E-commerce platform for clothing, electronics & jewellery.
+                        </p>
+
+                        <span class="badge bg-success">Django</span>
+                        <span class="badge bg-info">PostgreSQL</span>
+                        <span class="badge bg-warning text-dark">Bootstrap</span>
+
+                        <br>
+                        <a href="project/" class="btn btn-sm btn-dark mt-3">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Section title */
+.section-title{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Card styling */
+.card{
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Card title */
+.card-title{
+    font-weight: 600;
+}
+
+/* Badge spacing */
+.badge{
+    margin-right: 5px;
+}
+
+/* Button styling */
+.btn-dark{
+    border-radius: 6px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px){
+    
+    .section-title{
+        font-size: 1.6rem;
+    }
+
+    .card{
+        text-align: center;
+    }
+
+    .btn{
+        width: 100%;
+    }
+}
+</style>
